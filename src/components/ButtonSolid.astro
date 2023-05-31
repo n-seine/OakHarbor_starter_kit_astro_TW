@@ -1,0 +1,9 @@
+---
+const {href} =Astro.props
+
+---
+
+<a href={href}
+class="relative z-10 inline-block py-3 mx-2 mb-4 text-base font-bold transition-colors duration-300 before:absolute lg:py-4 w-44 text-headerColor bg-primary hover:text-bodyTextColorWhite before:w-0 before:inline-block before:h-full before:bg-black before:top-0 before:left-0 hover:before:w-full before:-z-10 before:transition-all before:duration-300">
+<slot/>
+</a>
