@@ -1,0 +1,45 @@
+---
+import { Picture } from "@astrojs/image/components";
+import picture1 from '../assets/images/cabinets2.jpeg'
+import picture2 from '../assets/images/construction-400w.jpeg'
+
+---
+
+<section class="pt-14 md:pt-20 xl:pt-28 px-4 relative">
+
+    <!-- Flex container for content -->
+    <div class="w-full max-w-7xl m-auto flex justify-between items-center flex-col gap-10 lg:flex-row lg:content-between lg:gap-14">
+        <!-- Image section -->
+        <div class="w-full flex-grow self-stretch"> 
+            <div class="grid grid-cols-12  relative gap-8">
+                <div class="col-start-1 col-span-11 row-start-1 z-0">
+                    <Picture class=" aspect-square block object-cover w-full rounded-3xl  "
+                    src={picture1}
+                    alt="What we can do"
+                    widths={[400,800,1920]}
+                   
+                    sizes="((max-width:800px) 100vw, 1920)">
+                    </Picture>
+                </div>
+
+                <div class=" col-end-13 col-span-8 row-start-1 z-10 pt-16
+                ">
+                    <Picture class="border-[12px] border-bodyTextColorWhite  block object-cover w-full aspect-square rounded-3xl  "
+                    src={picture2}
+                    alt="What we can do"
+                    widths={[400,800,1920]}
+                    sizes="((max-width:800px) 100vw, 1920)">
+                    </Picture>
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa ducimus, explicabo nobis natus cumque aperiam possimus dignissimos ea similique exercitationem perferendis adipisci vitae nulla? Animi quis sed ad odit?
+            </p>
+        </div>
+
+    </div>
+
+</section>
