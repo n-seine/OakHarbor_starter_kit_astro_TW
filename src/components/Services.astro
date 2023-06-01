@@ -1,0 +1,22 @@
+---
+import ServicesCard from '../components/ServicesCard.astro'
+const services = [
+    {title:"Service 1", 
+    text:"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.", 
+    img:"/images/svgs/service1.svg",
+    alt:"alt text"},
+    {title:"Service 2", 
+    text:"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.", 
+    img:"/images/svgs/service2.svg",
+    alt:"alt text"},
+    {title:"Service 3", 
+    text:"Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.", 
+    img:"/images/svgs/service3.svg",
+    alt:"alt text"},
+]
+---
+
+<section class="relative z-50 w-10/12 px-5 py-12 m-auto mb-12 -mt-40 border-t-4 rounded-md shadow-2xl lg:border-t-8 md:text-base md:flex md:justify-between md:gap-4 md:items-start md:w-11/12 bg-bodyTextColorWhite max-w-7xl border-primary xl:py-14 xl:px-16 dark:bg-medium">
+        {services.map(s => <ServicesCard title={s.title} text={s.text} img={s.img} alt={s.alt}/>)}
+   
+</section>

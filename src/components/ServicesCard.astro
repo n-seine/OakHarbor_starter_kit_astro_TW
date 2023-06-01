@@ -1,0 +1,20 @@
+---
+
+const { title,text,img,alt } = Astro.props;
+---
+<div class="block w-full max-w-sm m-auto mb-12 md:m-0 ">
+	<picture class="flex items-center justify-center w-20 h-20 m-auto mb-6 rounded-full dark:bg-primaryDark bg-primary">
+		
+		<img aria-hidden="true"
+		src={img}
+		alt={alt}
+		width="48px"
+		height="48px"
+		class="w-12 h-12"
+		/>
+
+	</picture>
+	<h2 class="mb-3 text-3xl font-bold leading-6 text-center text-headerColor">{title}</h2>
+	<p class="w-full text-lg leading-6 text-center opacity-70 text-grey">{text}</p>
+ 
+</div>

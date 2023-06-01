@@ -11,11 +11,21 @@ module.exports = {
       bodyTextColorWhite: "#FAFBFC",
       headerColor: "#1a1a1a",
       black: "#000000",
+      dark: "#082032",
+      medium: "#2C394B",
+      accent: "#334756",
+      grey: "#575757",
     },
     fontFamily: {
       roboto: "Roboto, sans-serif",
     },
-    extend: {},
+    extend: {
+      brightness: {
+        30: ".30",
+
+        175: "1.75",
+      },
+    },
   },
   plugins: [],
 };

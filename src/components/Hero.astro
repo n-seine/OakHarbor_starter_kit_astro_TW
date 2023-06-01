@@ -5,12 +5,12 @@ import {Picture, Image} from '@astrojs/image/components'
 import bgImage from '../assets/images/landing-2500w.webp'
 ---
 
-<section class="relative z-10 px-4 pb-24 overflow-hidden text-center md:px-9 xl:bg-[url(images/landing-2500w.webp)] xl:bg-cover xl:bg-center xl:bg-no-repeat xl:bg-fixed">
+<section class="relative z-10 px-4 overflow-hidden text-center md:px-9 xl:bg-[url(images/landing-2500w.webp)] xl:bg-cover xl:bg-center xl:bg-no-repeat xl:bg-fixed">
     <div class="relative w-full pt-40 m-auto max-w-7xl pb-52 md:pt-48 md:pb-60">
         <!-- Ajouter un before ? pourquoi? -->
         <div class="box-border flex flex-wrap items-start justify-center w-4/5 max-w-lg m-auto mb-20 lg:max-w-xl">
-            <span class="block mb-4 text-sm font-bold leading-5 tracking-widest text-center uppercase font-roboto text-primary lg:text-base">mountain hiking society</span>
-            <h1 class="relative max-w-3xl mb-8 mr-auto text-3xl font-black text-center md:mb-9 lg:mb-10 text-bodyTextColorWhite md:text-4xl lg:max-w-5xl lg:text-5xl lg:leading-tight">Explore the World with Exciting People</h1>
+            <span class="block mb-4 text-xs font-bold leading-5 tracking-widest text-center uppercase md:text-sm font-roboto text-primary lg:text-base">mountain hiking society</span>
+            <h1 class="relative max-w-3xl mb-8 mr-auto text-4xl font-black text-center md:mb-9 lg:mb-10 text-bodyTextColorWhite md:text-5xl lg:max-w-5xl lg:text-6xl lg:leading-tight">Explore the World with Exciting People</h1>
             <p class="w-full max-w-3xl mx-auto mb-10 text-base leading-normal text-center md:mb-11 lg:mb-12 md:text-lg lg:text-xl text-bodyTextColorWhite ">Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh
                 condimentum.</p>
             <ButtonSolid  href='/'>Explore more</ButtonSolid>
@@ -24,6 +24,6 @@ import bgImage from '../assets/images/landing-2500w.webp'
         </div>
     </div>
     <Picture 
-    class="absolute top-0 left-0 block object-cover w-full h-full brightness-50 -z-40"
-    src={bgImage} alt="background image" widths={[800,1600]} sizes='((max-width: 768px) 800px, 1600px)'  />
+    class="absolute top-0 left-0 block object-cover w-full h-full brightness-30 -z-40"
+    src={bgImage} alt="background image" widths={[800,1300,1800]} sizes='(800px, (min-width: 600px) 1200px, 1600px)'  />
 </section>
